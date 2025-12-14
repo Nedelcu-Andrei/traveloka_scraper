@@ -14,7 +14,7 @@ The project handles dynamic content, bot protection (captcha), and non-trivial D
   - Room names
   - Rate type
   - Shown currency
-  - Prices (net / total / per stay / per night)
+  - Prices (net / total / per stay / per night / original)
   - Taxes
   - Breakfast inclusion
   - Cancellation policy
