@@ -11,8 +11,7 @@ log = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     log.info("Starting...")
-    BASE_SITEMAP = "https://www.traveloka.com/en-en/sitemap/index.xml.gz"  # <-- Starting link. Sitemaps with all the
-                                                # hotel details page urls that do not contain any user preference input
+    BASE_SITEMAP = "https://www.traveloka.com/en-en/sitemap/index.xml.gz"  # <-- Starting link
 
     # STEP 1 --> Scrape sitemap URL for hotels details page and extract first hotel url
     parser = TravelokaParser()
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     hotel_link = get_hotel_link_from_sitemap(BASE_SITEMAP)
     hotel_link_paths = parser.extract_hotel_uri_parts(hotel_link)
     final_deeplink = parser.build_deep_link(uri_paths=hotel_link_paths, check_in="16-12-2025", check_out="18-12-2025", adults="2",
-                                            rooms="1") # <--- Input here any desire parameter for the hotel details.
+                                            rooms="1") # <--- Input here any desired parameter for the hotel details.
 
     # STEP 2 ---> Scrape the hotel detail page with Playwright and get all the HTML data
     scraper = TravelokaScraper(headless=False)

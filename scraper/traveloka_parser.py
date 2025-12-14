@@ -138,4 +138,3 @@ def xpath_attr(node, xpath: str, default: str = "") -> str:
     """Return first XPath attribute value or a default."""
     result = node.xpath(xpath)
     return result[0] if result else default
-
