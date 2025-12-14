@@ -2,7 +2,7 @@
 
 A Python scraper that extracts hotel room and pricing data from Traveloka using **Playwright** and **XPath-based HTML parsing**.
 
-The project handles dynamic content, bot protection (captcha), and non-trivial DOM structures where room details and prices are rendered separately.
+The project handles dynamic content, bot protection (captcha), and non-trivial DOM structures.
 
 ---
 
