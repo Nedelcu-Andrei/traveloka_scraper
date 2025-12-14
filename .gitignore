@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# Playwright / browser sessions
+pw_profile/
+pw-session/
+chrome-session/
+playwright-report/
+test-results/
+
+# Logs
+logging/
+logs/
+log/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
