@@ -74,7 +74,7 @@ root/
 
 ## 🚀 Setup & Installation
 
-### 1️⃣ Clone the repository
+### 1 - Clone the repository
 
 - bash
 ```
@@ -89,11 +89,11 @@ cd traveloka_scraper
 ```
 source .venv/bin/activate
 ```
-### 3️⃣ Install dependencies
+### 2 - Install dependencies
 ```
 pip install -r requirements.txt
 ```
-### 4️⃣ Install Playwright browsers
+### 3 -  Install Playwright browsers
 ```
 playwright install
 ```
